@@ -12,8 +12,10 @@
     //PROCESSAMENTO
 
     let msgFinal = "";
-    (2024 - anoNascimento)
+    (anoNascimento <= 2008) ? msgFinal = "Vocẽ já pode votar" : msgFinal = "Você ainda não pode votar. Daqui " + (anoNascimento - 2008) + "anos você poderá";
     
     //SAÍDA
+
+    document.write(msgFinal);
 
 </script>
